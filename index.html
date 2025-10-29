@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ISS Tracker PWA</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="container">
+        <h1>Localizador da ISS 🛰️</h1>
+        <div id="status-message">Aguardando permissão de geolocalização...</div>
+
+        <div id="iss-info" class="card hidden">
+            <h3>Localização da ISS:</h3>
+            <p>Latitude: <span id="iss-lat">--</span></p>
+            <p>Longitude: <span id="iss-lon">--</span></p>
+            <p class="distance">Distância de você: <span id="iss-distance">Calculando...</span></p>
+        </div>
+
+        <button id="refresh-button">Atualizar Localização</button>
+    </div>
+    
+    <script src="sw-register.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
