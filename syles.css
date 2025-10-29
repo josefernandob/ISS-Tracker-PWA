@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e; /* Fundo escuro (espaço) */
+    color: #e4e4e4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    background-color: #0f3460;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    max-width: 450px;
+    width: 100%; 
+}
+
+h1 {
+    color: #ffcc00; /* Destaque */
+    margin-bottom: 20px;
+}
+
+#status-message {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #2e4a6a;
+    border-radius: 5px;
+}
+
+.card {
+    background-color: #1a1a2e;
+    border: 1px solid #ffcc00;
+    padding: 20px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+    text-align: left;
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #ffcc00;
+}
+
+.distance {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #a2d2ff;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    background-color: #ffcc00;
+    color: #1a1a2e;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+button:hover:not(:disabled) {
+    background-color: #e6b800;
+}
+
+button:disabled {
+    background-color: #5c5c5c;
+    cursor: not-allowed;
+}
